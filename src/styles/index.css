@@ -20,27 +20,25 @@
     height: 60px;
     margin: 10px 0;
     border-radius: 50%;
-   background-color: auto;
-    transition: background-color 0.3s;
 }
 
 .rojo.activo {
     background-color: red;
-    box-shadow: 0 0 50px yellow;
+    box-shadow: 0 0 50px rgb(255, 255, 129);
 }
 
 .amarillo.activo {
     background-color: yellow;
-    box-shadow: 0 0 50px yellow;
+    box-shadow: 0 0 50px rgb(255, 255, 129);
 }
 
 .verde.activo {
     background-color: green;
-    box-shadow: 0 0 50px yellow;
+    box-shadow: 0 0 50px rgb(255, 255, 129);
 }
 .morado.activo {
-    background-color: blueviolet;
-    box-shadow: 0 0 50px yellow;
+    background-color: purple;
+    box-shadow: 0 0 50px rgb(255, 255, 129);
 }
 .red{
     background-color: rgb(179, 6, 6);
@@ -51,7 +49,20 @@
 .green {
     background-color: rgb(1, 98, 1);
 }
+.morado {
+    background-color: rgb(49, 1, 84);
+}
 
-.purple {
-    background-color: white;
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: purple;
 }
