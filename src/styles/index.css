@@ -1,12 +1,57 @@
+/* styles.css */
+.container {
+    width: 100px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.palo {
+    margin: auto;
+    width: 25px;
+    height: 90px;
+    background-color: black; 
+}
 
-/* 
+.semafaro {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 50%;
+   background-color: auto;
+    transition: background-color 0.3s;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.rojo.activo {
+    background-color: red;
+    box-shadow: 0 0 50px yellow;
+}
 
-*/
+.amarillo.activo {
+    background-color: yellow;
+    box-shadow: 0 0 50px yellow;
+}
+
+.verde.activo {
+    background-color: green;
+    box-shadow: 0 0 50px yellow;
+}
+.morado.activo {
+    background-color: blueviolet;
+    box-shadow: 0 0 50px yellow;
+}
+.red{
+    background-color: rgb(179, 6, 6);
+}
+.yellow {
+    background-color: rgb(172, 172, 0);
+}
+.green {
+    background-color: rgb(1, 98, 1);
+}
+
+.purple {
+    background-color: white;
+}
