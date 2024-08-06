@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const TrafficLight = () => {
     const [color, setColor] = useState("red");
 
-    const botonMorado = () => {
+    const handlePurpleLight = () => {
         setColor("purple");
     };
 
@@ -12,23 +12,23 @@ const TrafficLight = () => {
             <div className="palo"></div>
             <div className="container">
                 <div 
-                    className={`semafaro ${color === 'red' ? 'rojo activo' : 'rojo'}`} 
+                    className={`semafaro red ${color === 'red' ? 'activo' : ''}`} 
                     onClick={() => setColor('red')}
                 ></div>
                 <div 
-                    className={`semafaro ${color === 'yellow' ? 'amarillo activo' : 'amarillo'}`} 
+                    className={`semafaro yellow ${color === 'yellow' ? 'activo' : ''}`} 
                     onClick={() => setColor('yellow')}
                 ></div>
                 <div 
-                    className={`semafaro ${color === 'green' ? 'verde activo' : 'verde'}`} 
+                    className={`semafaro green ${color === 'green' ? 'activo' : ''}`} 
                     onClick={() => setColor('green')}
                 ></div>
                 <div 
-                    className={`semafaro ${color === 'purple' ? 'morado activo' : 'morado'}`} 
+                    className={`semafaro purple ${color === 'purple' ? 'activo' : ''}`} 
                     onClick={() => setColor('purple')}
                 ></div>
             </div>
-            <button onClick={botonMorado}>Encender luz morada</button>
+            <button onClick={handlePurpleLight}>Encender luz morada</button>
         </div>
     );
 };

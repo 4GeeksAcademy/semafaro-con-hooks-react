@@ -1,4 +1,13 @@
-/* styles.css */
+.padre {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/fotos-premium/carretera-atardecer-fondo_949611-1133.jpg');
+    background-size: cover;
+    background-position: center;
+}
 .container {
     width: 100px;
     background-color: black;
@@ -8,53 +17,43 @@
     flex-direction: column;
     align-items: center;
 }
+
 .palo {
-    margin: auto;
+    margin-top: -90px;
     width: 25px;
     height: 90px;
     background-color: black; 
 }
 
 .semafaro {
-    width: 60px;
-    height: 60px;
-    margin: 10px 0;
+    width: 70px;
+    height: 70px;
+    margin: 5px 0;
     border-radius: 50%;
 }
 
-.rojo.activo {
-    background-color: red;
-    box-shadow: 0 0 50px rgb(255, 255, 129);
+.red {
+    background-color: rgb(194, 7, 7);
 }
 
-.amarillo.activo {
-    background-color: yellow;
-    box-shadow: 0 0 50px rgb(255, 255, 129);
-}
-
-.verde.activo {
-    background-color: green;
-    box-shadow: 0 0 50px rgb(255, 255, 129);
-}
-.morado.activo {
-    background-color: purple;
-    box-shadow: 0 0 50px rgb(255, 255, 129);
-}
-.red{
-    background-color: rgb(179, 6, 6);
-}
 .yellow {
-    background-color: rgb(172, 172, 0);
+    background-color: rgb(195, 195, 5);
 }
+
 .green {
-    background-color: rgb(1, 98, 1);
+    background-color: rgb(9, 116, 9);
 }
-.morado {
+
+.purple {
     background-color: rgb(49, 1, 84);
 }
 
+.activo {
+    box-shadow: 0 0 100px 30px  rgb(255, 250, 159);
+}
+
 button {
-    margin-top: 20px;
+    margin-top: 100px;
     padding: 10px 20px;
     background-color: black;
     color: white;
